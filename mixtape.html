@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>my love mixtape</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&family=Nunito:ital,wght@1,200&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&family=Open+Sans&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="shaina">
+        <p>songs in the key of shaina &#9825;</p>
+    </div>
+    <div class="record-player">
+        <input type="checkbox" id="headshell">
+        <label class="headshell" for="headshell"></label>
+        <audio id="player">
+        <source src="mixtape.mp3" type="audio/mpeg"/>
+      </audio>
+        <input type="range" max="1" min="0" step="0.1" id="volume-control" onchange="audioVolume(this.value)">
+        <div class="plinth"></div>
+        <div class="platter"></div>
+        <div class="vinyl"></div>
+        <div class="top-circle"></div>
+    </div>
+    <div class="songs">
+        <p>walking back home - vira talisa<br>
+        home - edward sharpe & the magnetic zeros<br>
+        always - daniel caesar<br>
+        bawat daan - ebe dancel<br>
+        my love mine all mine - mitski
+        </p>
+    </div>
+  </body>
+  <script src="mixtape.js"></script>
+</html>
